@@ -5,9 +5,17 @@ http = require('http');
 require('shelljs/global');
 
 function chaos_monkey(project) {
-  var dir = __dirname + '/..';
-  if (exec("find " + dir + "/" + project + "/* -type f -exec rm -f '{}' \\;").code !== 0) {
+  var dir = __dirname;
+  if (exec("find " + dir + "/../" + project + "/* -type f -exec rm -f '{}' \\;").code !== 0) {
     echo('Error: Find failed');
+  }
+
+  if (exec("cp -f " + dir + "/index.html /usr/share/nginx/html/").code !== 0) {
+    echo('Error: Copy failed');
+  }
+
+  if (exec("service nginx restart").code !== 0) {
+    echo('Error: nginx restart failed');
   }
 }
 
