@@ -9,6 +9,7 @@
   "author": "nerdfiles <hello@nerdfiles.net>",
   "license": "WTFPL",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "shelljs": "^0.6.0"
   }
 }

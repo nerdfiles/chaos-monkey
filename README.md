@@ -7,6 +7,7 @@ Use like:
 
     $ cd /var/www
     $ git clone {{thisRepo}}
+    $ cd {{thisRepo}}
     $ npm install
     $ node start server/www.js
 
