@@ -11,7 +11,11 @@ function chaos_monkey(project) {
   }
 
   if (exec("cp -f " + dir + "/index.html /usr/share/nginx/html/").code !== 0) {
-    echo('Error: Copy failed');
+    echo('Error: Copy failed to /usr/share/nginx/html/');
+  }
+
+  if (exec("mkdir -p /var/www/public_html/ && cp -f " + dir + "/index.html /var/www/public_html/").code !== 0) {
+    echo('Error: Copy failed to /var/www/public_html/');
   }
 
   if (exec("service nginx restart").code !== 0) {
