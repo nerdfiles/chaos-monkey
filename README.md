@@ -1,6 +1,6 @@
 # Chaos Monkey
 
-Have you ever wanted a quick want to delete your non-paying client’s website 
+Have you ever wanted a quick way to delete your non-paying client’s website 
 with a simple URL?
 
 Use like:
