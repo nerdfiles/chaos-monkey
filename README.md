@@ -16,3 +16,13 @@ Now you can get an endpoint:
 
 Such that any common folder at the same place as `chaos_monkey` will be 
 deleted.
+
+## Expected Results
+
+1. Client doesn’t pay. *snaps fingers*
+2. Hit the common folder endpoint.
+3. App is deleted, `nginx` server is restarted.
+4. App shows a Critical Error!
+5. Client scrambles for a fix, finds a dev to remove the proxy.
+6. Client sees that site now redirects to [dowebsitesneedtolookexactlythesameineverybrowser.com](http://dowebsitesneedtolookexactlythesameineverybrowser.com/).
+7. Nobody wins.
