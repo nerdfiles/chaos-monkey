@@ -13,7 +13,7 @@ Use like:
 
 Now you can get an endpoint:
 
-    $ http://{{domain}}/axe/{{toBeDeleted}}
+    $ open http://{{domain}}/axe/{{toBeDeleted}}
 
 Such that any common folder at the same place as `chaos_monkey` will be 
 deleted.
