@@ -8,8 +8,8 @@ Use like:
     $ cd /var/www
     $ git clone {{thisRepo}}
     $ cd {{thisRepo}}
-    $ npm install
-    $ node start server/www.js
+    $ npm install && npm install -g forever
+    $ forever start server/www.js
 
 Now you can get an endpoint:
 
