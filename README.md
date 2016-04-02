@@ -6,16 +6,16 @@ with a simple URL?
 Use like:
 
     $ cd /var/www
-    $ git clone {{thisRepo}}
-    $ cd {{thisRepo}}
+    $ git clone https://github.com/nerdfiles/chaos-monkey/
+    $ cd chaos-monkey
     $ npm install && npm install -g forever
-    $ forever start server/www.js
+    $ forever start index.js
 
 Now you can get an endpoint:
 
-    $ open http://{{domain}}/axe/{{toBeDeleted}}
+    $ open http://{{ip}}:{{port}}/axe/{{toBeDeleted}}
 
-Such that any common folder at the same place as `chaos_monkey` will be 
+Such that any common folder at the same place as `chaos-monkey` will be 
 deleted.
 
 ## Expected Results
